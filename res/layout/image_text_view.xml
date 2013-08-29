@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+		<RelativeLayout
+			android:id="@+id/image_text_view_button_layout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		<ImageButton
+			android:id="@+id/stop_button"
+			android:src="@drawable/stop_button_doc"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</ImageButton>
+		
+		<ImageButton
+			android:id="@+id/play_button"
+			android:src="@drawable/play_button_doc"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</ImageButton>
+		
+		<ImageButton
+			android:id="@+id/copy_button"
+			android:src="@drawable/copy_button_doc"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</ImageButton>
+		
+		</RelativeLayout>
+		
+		<df.lente.TextSelectWebView
+			android:id="@+id/image_text_view_web_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</df.lente.TextSelectWebView>
+</LinearLayout>
+			

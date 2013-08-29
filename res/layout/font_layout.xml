@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+>
+	<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+  		android:orientation="horizontal"
+  		android:id="@+id/font_layout"
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent">
+  		
+		<SeekBar
+			android:layout_alignTop="@+id/font_layout"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dip"
+			android:id="@+id/seekbar"
+			android:max="30"
+			android:progress="15"
+		/>
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Preview Text"
+			android:textSize="38dip"
+			android:id="@+id/text_preview"
+			android:layout_below="@+id/seekbar"
+			android:layout_centerHorizontal="true"
+			android:layout_marginBottom="10dip"
+		/>
+
+	   <TableLayout 
+		   	xmlns:android="http://schemas.android.com/apk/res/android"
+		  	android:id="@+id/font_buttons"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:stretchColumns="*"
+		    android:layout_below="@+id/text_preview">
+	    
+		   <TableRow>
+		   		<RelativeLayout>
+				   	<Button 
+					    android:id="@+id/arial_button"
+					    android:textSize="35dip"
+					    android:layout_width="175dip"
+					    android:layout_height="70dip"
+					    android:text="Arial" 
+					    android:layout_alignParentLeft="true"
+				    />
+				</RelativeLayout>
+				
+				<RelativeLayout>
+				   	<Button
+					    android:id="@+id/tahoma_button"
+					    android:textSize="35dip"
+					    android:layout_width="175dip"
+					    android:layout_height="70dip"
+					    android:text="Tahoma" 
+				    />
+				</RelativeLayout>
+				
+				<RelativeLayout>
+				    <Button 
+					    android:id="@+id/georgia_button"
+					    android:textSize="35dip"
+					    android:layout_width="175dip"
+					    android:layout_height="70dip"
+					    android:text="Georgia" 
+					    android:layout_alignParentRight="true"
+				    />
+				</RelativeLayout>
+			</TableRow>
+			   
+			<TableRow>
+				<RelativeLayout>
+					<Button
+					    android:id="@+id/verdana_button"
+					    android:textSize="35dip"
+					    android:layout_width="175dip"
+					    android:layout_height="70dip"
+					    android:text="Verdana"
+					    android:layout_alignParentLeft="true"
+					/>
+				</RelativeLayout>
+				
+				<RelativeLayout>
+				    <Button 
+					    android:id="@+id/gothic_button"
+					    android:textSize="35dip"
+					    android:layout_width="175dip"
+					    android:layout_height="70dip"
+					    android:text="Gothic" 
+					    android:layout_centerHorizontal="true"
+				    />
+				</RelativeLayout>
+				
+				<RelativeLayout>
+					<Button 
+					    android:id="@+id/microsoft_button"
+					    android:textSize="35dip"
+					    android:layout_width="175dip"
+					    android:layout_height="70dip"
+					    android:text="Microsoft" 
+					    android:layout_alignParentRight="true"
+				    />
+				</RelativeLayout>    
+			</TableRow>
+		</TableLayout>
+	</RelativeLayout>
+</LinearLayout>

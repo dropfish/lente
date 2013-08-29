@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+  <item
+  android:id="@+id/import_from_gallery"
+  android:visible="true"
+  android:title="Import from Gallery"/>
+  
+  <item
+  android:id="@+id/color_settings"
+  android:visible="true"
+  android:title="Color Settings"/>
+  
+  <item
+  android:id="@+id/font_settings"
+  android:visible="true"
+  android:title="Font Settings"/>
+</menu>

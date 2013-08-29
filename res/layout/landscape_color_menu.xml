@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/landscape_color_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+  
+  
+  <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1">
+    
+    <TableRow>
+	    <RelativeLayout
+	    	android:layout_width="fill_parent"
+	  		android:layout_height="fill_parent">
+	  		
+		    <TextView
+		    	android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+		    	android:id="@+id/text_header"
+		        android:text="Text"
+		        android:textSize="50dip"
+		        android:layout_alignParentLeft="true"
+		        android:padding="3dip"/>
+		            
+		    <TextView
+		    	android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+		    	android:id="@+id/background_header"
+				android:layout_alignParentRight="true"
+		    	android:textSize="50dip"
+		        android:text="Background"
+		        android:padding="3dip" />
+		        
+		</RelativeLayout>
+    </TableRow>
+    
+    <TableRow>
+	    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:stretchColumns="*"
+	    android:layout_gravity="bottom">
+	    	
+	    	<TableRow>
+				<GridView
+				    android:id="@+id/text_gridview"
+				    android:layout_width="fill_parent" 
+				    android:layout_height="fill_parent"
+				    android:columnWidth="100dp"
+				    android:numColumns="2"
+				    android:verticalSpacing="10dp"
+				    android:horizontalSpacing="10dp"
+				    android:stretchMode="columnWidth"
+				    android:gravity="left"
+				/>
+				
+				<GridView
+				    android:id="@+id/background_gridview"
+				    android:layout_width="fill_parent" 
+				    android:layout_height="fill_parent"
+				    android:columnWidth="100dp"
+				    android:numColumns="2"
+				    android:verticalSpacing="10dp"
+				    android:horizontalSpacing="10dp"
+				    android:stretchMode="columnWidth"
+				    android:gravity="right"
+				/>
+	        </TableRow>
+		</TableLayout>
+	</TableRow>
+</TableLayout>
+</RelativeLayout>
